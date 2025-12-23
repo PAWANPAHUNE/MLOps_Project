@@ -15,3 +15,11 @@ stages:
     - src/MLOps_Project/pipeline/data_validation.py
     outs:
     - artifacts/data_validation
+  data_transformation:
+    cmd: python -m src.MLOps_Project.pipeline.data_transformation
+    deps:
+    - artifacts/data_validation
+    - params.yaml
+    - src/MLOps_Project/pipeline/data_transformation.py
+    outs:
+    - artifacts/data_transformation
