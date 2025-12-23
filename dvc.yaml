@@ -7,3 +7,11 @@ stages:
     - src/MLOps_Project/pipeline/data_ingestion.py
     outs:
     - artifacts/data_ingestion
+  data_validation:
+    cmd: python -m src.MLOps_Project.pipeline.data_validation
+    deps:
+    - artifacts/data_ingestion
+    - schema.yaml
+    - src/MLOps_Project/pipeline/data_validation.py
+    outs:
+    - artifacts/data_validation
