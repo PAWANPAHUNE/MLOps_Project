@@ -2,9 +2,6 @@
 __pycache__/
 *.pyc
 
-# DVC artifacts
-artifacts/
-
 # MLflow local files
 mlruns/
 mlflow.db

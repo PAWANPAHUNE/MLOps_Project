@@ -1,0 +1,188 @@
+[2025-12-23 16:16:08,123 : INFO : main : >>>>>> Stage: Data Ingestion Stage started <<<<<<]
+[2025-12-23 16:16:08,125 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:16:08,126 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:16:08,127 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:16:08,128 : INFO : common : Directory created at: artifacts/data_ingestion]
+[2025-12-23 16:16:08,671 : INFO : data_ingestion : File downloaded successfully and saved at artifacts/data_ingestion/data.zip]
+[2025-12-23 16:16:08,675 : INFO : data_ingestion : File extracted successfully at artifacts/data_ingestion]
+[2025-12-23 16:16:08,676 : INFO : main : >>>>>> Stage: Data Ingestion Stage completed <<<<<<
+
+]
+[2025-12-23 16:16:08,676 : INFO : main : >>>>>> Stage: Data Validation Stage started <<<<<<]
+[2025-12-23 16:16:08,680 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:16:08,681 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:16:08,683 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:16:08,683 : INFO : common : Directory created at: artifacts/data_validation]
+[2025-12-23 16:16:08,700 : INFO : main : >>>>>> Stage: Data Validation Stage completed <<<<<<
+
+]
+[2025-12-23 16:16:08,700 : INFO : main : >>>>>> Stage: Data Transformation Stage started <<<<<<]
+[2025-12-23 16:16:08,702 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:16:08,703 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:16:08,704 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:16:08,705 : INFO : common : Directory created at: artifacts/data_transformation]
+[2025-12-23 16:16:08,722 : INFO : data_transformation : Data transformation completed. Train and test data saved at artifacts/data_transformation]
+[2025-12-23 16:16:08,722 : INFO : data_transformation : (1279, 12)]
+[2025-12-23 16:16:08,722 : INFO : data_transformation : (320, 12)]
+[2025-12-23 16:16:08,723 : INFO : main : >>>>>> Stage: Data Transformation Stage completed <<<<<<
+
+]
+[2025-12-23 16:16:08,723 : INFO : main : >>>>>> Stage: Model Trainer Stage started <<<<<<]
+[2025-12-23 16:16:08,724 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:16:08,725 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:16:08,726 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:16:08,726 : INFO : common : Directory created at: artifacts/model_trainer]
+[2025-12-23 16:16:08,734 : INFO : model_trainer : Model saved at artifacts/model_trainer/model.joblib]
+[2025-12-23 16:16:08,734 : INFO : main : >>>>>> Stage: Model Trainer Stage completed <<<<<<
+
+]
+[2025-12-23 16:16:08,734 : INFO : main : >>>>>> Stage: Model Evaluation Stage started <<<<<<]
+[2025-12-23 16:16:09,170 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:16:09,171 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:16:09,172 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:16:09,172 : INFO : common : Directory created at: artifacts/model_evaluation]
+[2025-12-23 16:16:27,282 : INFO : main : >>>>>> Stage: Model Evaluation Stage completed <<<<<<
+
+]
+[2025-12-23 16:22:46,013 : INFO : main : >>>>>> Stage: Data Ingestion Stage started <<<<<<]
+[2025-12-23 16:22:46,014 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:22:46,016 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:22:46,017 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:22:46,017 : INFO : common : Directory created at: artifacts/data_ingestion]
+[2025-12-23 16:22:46,017 : INFO : data_ingestion : File already exists at artifacts/data_ingestion/data.zip]
+[2025-12-23 16:22:46,019 : INFO : data_ingestion : File extracted successfully at artifacts/data_ingestion]
+[2025-12-23 16:22:46,019 : INFO : main : >>>>>> Stage: Data Ingestion Stage completed <<<<<<
+
+]
+[2025-12-23 16:22:46,019 : INFO : main : >>>>>> Stage: Data Validation Stage started <<<<<<]
+[2025-12-23 16:22:46,020 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:22:46,021 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:22:46,022 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:22:46,022 : INFO : common : Directory created at: artifacts/data_validation]
+[2025-12-23 16:22:46,032 : INFO : main : >>>>>> Stage: Data Validation Stage completed <<<<<<
+
+]
+[2025-12-23 16:22:46,032 : INFO : main : >>>>>> Stage: Data Transformation Stage started <<<<<<]
+[2025-12-23 16:22:46,033 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:22:46,033 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:22:46,034 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:22:46,034 : INFO : common : Directory created at: artifacts/data_transformation]
+[2025-12-23 16:22:46,044 : INFO : data_transformation : Data transformation completed. Train and test data saved at artifacts/data_transformation]
+[2025-12-23 16:22:46,044 : INFO : data_transformation : (1279, 12)]
+[2025-12-23 16:22:46,044 : INFO : data_transformation : (320, 12)]
+[2025-12-23 16:22:46,044 : INFO : main : >>>>>> Stage: Data Transformation Stage completed <<<<<<
+
+]
+[2025-12-23 16:22:46,044 : INFO : main : >>>>>> Stage: Model Trainer Stage started <<<<<<]
+[2025-12-23 16:22:46,046 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:22:46,046 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:22:46,047 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:22:46,047 : INFO : common : Directory created at: artifacts/model_trainer]
+[2025-12-23 16:22:46,056 : INFO : model_trainer : Model saved at artifacts/model_trainer/model.joblib]
+[2025-12-23 16:22:46,056 : INFO : main : >>>>>> Stage: Model Trainer Stage completed <<<<<<
+
+]
+[2025-12-23 16:22:46,056 : INFO : main : >>>>>> Stage: Model Evaluation Stage started <<<<<<]
+[2025-12-23 16:22:46,485 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:22:46,485 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:22:46,486 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:22:46,486 : INFO : common : Directory created at: artifacts/model_evaluation]
+[2025-12-23 16:23:04,574 : INFO : main : >>>>>> Stage: Model Evaluation Stage completed <<<<<<
+
+]
+[2025-12-23 16:46:06,243 : INFO : data_ingestion : >>>>>> Stage: Data Ingestion Stage started <<<<<<]
+[2025-12-23 16:46:06,245 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:46:06,246 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:46:06,247 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:46:06,248 : INFO : common : Directory created at: artifacts/data_ingestion]
+[2025-12-23 16:46:07,040 : INFO : data_ingestion : File downloaded successfully and saved at artifacts/data_ingestion/data.zip]
+[2025-12-23 16:46:07,042 : INFO : data_ingestion : File extracted successfully at artifacts/data_ingestion]
+[2025-12-23 16:46:07,043 : INFO : data_ingestion : >>>>>> Stage: Data Ingestion Stage completed <<<<<<
+
+]
+[2025-12-23 16:46:40,249 : INFO : data_ingestion : >>>>>> Stage: Data Ingestion Stage started <<<<<<]
+[2025-12-23 16:46:40,251 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:46:40,252 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:46:40,253 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:46:40,253 : INFO : common : Directory created at: artifacts/data_ingestion]
+[2025-12-23 16:46:40,474 : INFO : data_ingestion : File downloaded successfully and saved at artifacts/data_ingestion/data.zip]
+[2025-12-23 16:46:40,477 : INFO : data_ingestion : File extracted successfully at artifacts/data_ingestion]
+[2025-12-23 16:46:40,478 : INFO : data_ingestion : >>>>>> Stage: Data Ingestion Stage completed <<<<<<
+
+]
+[2025-12-23 16:50:36,144 : INFO : data_validation : >>>>>> Stage: Data Validation Stage started <<<<<<]
+[2025-12-23 16:50:36,146 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:50:36,147 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:50:36,148 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:50:36,148 : INFO : common : Directory created at: artifacts/data_validation]
+[2025-12-23 16:50:36,158 : INFO : data_validation : >>>>>> Stage: Data Validation Stage completed <<<<<<
+
+]
+[2025-12-23 16:50:37,229 : INFO : data_transformation : >>>>>> Stage: Data Transformation Stage started <<<<<<]
+[2025-12-23 16:50:37,230 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:50:37,230 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:50:37,231 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:50:37,231 : INFO : common : Directory created at: artifacts/data_transformation]
+[2025-12-23 16:50:37,241 : INFO : data_transformation : Data transformation completed. Train and test data saved at artifacts/data_transformation]
+[2025-12-23 16:50:37,241 : INFO : data_transformation : (1279, 12)]
+[2025-12-23 16:50:37,241 : INFO : data_transformation : (320, 12)]
+[2025-12-23 16:50:37,241 : INFO : data_transformation : >>>>>> Stage: Data Transformation Stage completed <<<<<<
+
+]
+[2025-12-23 16:50:38,176 : INFO : model_trainer : >>>>>> Stage: Model Trainer Stage started <<<<<<]
+[2025-12-23 16:50:38,177 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:50:38,178 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:50:38,179 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:50:38,179 : INFO : common : Directory created at: artifacts/model_trainer]
+[2025-12-23 16:50:38,186 : INFO : model_trainer : Model saved at artifacts/model_trainer/model.joblib]
+[2025-12-23 16:50:38,187 : INFO : model_trainer : >>>>>> Stage: Model Trainer Stage completed <<<<<<
+
+]
+[2025-12-23 16:50:39,441 : INFO : model_evaluation : >>>>>> Stage: Model Evaluation Stage started <<<<<<]
+[2025-12-23 16:50:39,442 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:50:39,443 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:50:39,444 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:50:39,444 : INFO : common : Directory created at: artifacts/model_evaluation]
+[2025-12-23 16:50:41,674 : ERROR : model_evaluation : Error in Model Evaluation Stage: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/src/MLOps_Project/pipeline/model_evaluation.py", line 22, in <module>
+    model_evaluation_pipeline.initiate_model_evaluation()
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/src/MLOps_Project/pipeline/model_evaluation.py", line 16, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/src/MLOps_Project/components/model_evaluation.py", line 31, in log_into_mlflow
+    with mlflow.start_run():
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 540, in start_run
+    active_run_obj = client.create_run(
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/tracking/client.py", line 485, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/telemetry/track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/tracking/_tracking_service/client.py", line 183, in create_run
+    return self.store.create_run(
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/store/tracking/rest_store.py", line 345, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/store/tracking/rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/utils/rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "/Users/pawanpahune/Downloads/MLOps_Project/MLOps_Project/venv/lib/python3.10/site-packages/mlflow/utils/rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2025-12-23 16:53:10,551 : INFO : model_evaluation : >>>>>> Stage: Model Evaluation Stage started <<<<<<]
+[2025-12-23 16:53:10,553 : INFO : common : YAML file: config/config.yaml loaded successfully]
+[2025-12-23 16:53:10,554 : INFO : common : YAML file: params.yaml loaded successfully]
+[2025-12-23 16:53:10,555 : INFO : common : YAML file: schema.yaml loaded successfully]
+[2025-12-23 16:53:10,556 : INFO : common : Directory created at: artifacts/model_evaluation]
+[2025-12-23 16:53:28,778 : INFO : model_evaluation : >>>>>> Stage: Model Evaluation Stage completed <<<<<<
+
+]
+[2025-12-23 18:20:32,983 : INFO : _client : HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"]
+[2025-12-23 18:20:32,993 : INFO : _client : HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"]
+[2025-12-23 18:20:33,176 : INFO : _client : HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"]
+[2025-12-23 18:20:33,274 : INFO : _client : HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"]
+[2025-12-23 18:20:34,067 : INFO : _client : HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"]
+[2025-12-23 18:26:56,917 : INFO : _client : HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"]
+[2025-12-23 18:26:56,959 : INFO : _client : HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"]
+[2025-12-23 18:26:56,968 : INFO : _client : HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"]
+[2025-12-23 18:26:57,205 : INFO : _client : HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"]
+[2025-12-23 18:26:57,738 : INFO : _client : HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"]
