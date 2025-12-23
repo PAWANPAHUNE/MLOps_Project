@@ -21,3 +21,92 @@ stages:
       md5: cf213e68237a5a48a00ae1834dd84caa.dir
       size: 124280
       nfiles: 2
+  data_validation:
+    cmd: python -m src.MLOps_Project.pipeline.data_validation
+    deps:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: cf213e68237a5a48a00ae1834dd84caa.dir
+      size: 124280
+      nfiles: 2
+    - path: schema.yaml
+      hash: md5
+      md5: 87ae89ce0b01c477a312fe152b43f21e
+      size: 316
+    - path: src/MLOps_Project/pipeline/data_validation.py
+      hash: md5
+      md5: d43b4447a85b7821e85f68065446c327
+      size: 1064
+    outs:
+    - path: artifacts/data_validation
+      hash: md5
+      md5: 572a2f05ae78be9812ca0cf510ab7476.dir
+      size: 24
+      nfiles: 1
+  data_transformation:
+    cmd: python -m src.MLOps_Project.pipeline.data_transformation
+    deps:
+    - path: artifacts/data_validation
+      hash: md5
+      md5: 572a2f05ae78be9812ca0cf510ab7476.dir
+      size: 24
+      nfiles: 1
+    - path: params.yaml
+      hash: md5
+      md5: e9ae13a585df546cafcffbc37172284b
+      size: 44
+    - path: src/MLOps_Project/pipeline/data_transformation.py
+      hash: md5
+      md5: 1455d7e0bd2500dc8aa9aee1e69b360e
+      size: 1086
+    outs:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c493644c0deb7aeefc47cace9edece90.dir
+      size: 93631
+      nfiles: 2
+  model_trainer:
+    cmd: python -m src.MLOps_Project.pipeline.model_trainer
+    deps:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c493644c0deb7aeefc47cace9edece90.dir
+      size: 93631
+      nfiles: 2
+    - path: params.yaml
+      hash: md5
+      md5: e9ae13a585df546cafcffbc37172284b
+      size: 44
+    - path: src/MLOps_Project/pipeline/model_trainer.py
+      hash: md5
+      md5: 04083074b777ae0406f36b405a6de7cf
+      size: 967
+    outs:
+    - path: artifacts/model_trainer
+      hash: md5
+      md5: d73d83279355870c1e981807cdde9364.dir
+      size: 1183
+      nfiles: 1
+  model_evaluation:
+    cmd: python -m src.MLOps_Project.pipeline.model_evaluation
+    deps:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c493644c0deb7aeefc47cace9edece90.dir
+      size: 93631
+      nfiles: 2
+    - path: artifacts/model_trainer
+      hash: md5
+      md5: d73d83279355870c1e981807cdde9364.dir
+      size: 1183
+      nfiles: 1
+    - path: src/MLOps_Project/pipeline/model_evaluation.py
+      hash: md5
+      md5: ee5442abce353b70a67bc11ba5b27698
+      size: 1034
+    outs:
+    - path: artifacts/model_evaluation
+      hash: md5
+      md5: d751713988987e9331980363e24189ce.dir
+      size: 0
+      nfiles: 0

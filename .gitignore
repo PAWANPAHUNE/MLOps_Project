@@ -1,4 +1,13 @@
-venv/
-logs/
+# Python cache
+__pycache__/
+*.pyc
+
+# DVC artifacts
 artifacts/
 
+# MLflow local files
+mlruns/
+mlflow.db
+
+# Virtual environment
+venv/

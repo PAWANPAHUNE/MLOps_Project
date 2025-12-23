@@ -49,3 +49,13 @@ except Exception as e:
     logger.exception(f"Error in {STAGE_NAME}: {e}")
     raise e
 
+STAGE_NAME = "Model Evaluation Stage"
+try:
+    logger.info(f">>>>>> Stage: {STAGE_NAME} started <<<<<<")
+    from src.MLOps_Project.pipeline.model_evaluation import ModelEvaluationPipeline
+    model_evaluation_pipeline = ModelEvaluationPipeline()
+    model_evaluation_pipeline.initiate_model_evaluation()
+    logger.info(f">>>>>> Stage: {STAGE_NAME} completed <<<<<<\n\n")
+except Exception as e:
+    logger.exception(f"Error in {STAGE_NAME}: {e}")
+    raise e
