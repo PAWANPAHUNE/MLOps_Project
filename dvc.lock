@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python -m src.MLOps_Project.pipeline.data_ingestion
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 30d28a79d42b6cfdc32de875d6acda28
+      size: 983
+    - path: schema.yaml
+      hash: md5
+      md5: 87ae89ce0b01c477a312fe152b43f21e
+      size: 316
+    - path: src/MLOps_Project/pipeline/data_ingestion.py
+      hash: md5
+      md5: da623f516e31aebcdac6025ecaa97205
+      size: 1020
+    outs:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: cf213e68237a5a48a00ae1834dd84caa.dir
+      size: 124280
+      nfiles: 2

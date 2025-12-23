@@ -1,0 +1,9 @@
+stages:
+  data_ingestion:
+    cmd: python -m src.MLOps_Project.pipeline.data_ingestion
+    deps:
+    - config/config.yaml
+    - schema.yaml
+    - src/MLOps_Project/pipeline/data_ingestion.py
+    outs:
+    - artifacts/data_ingestion
