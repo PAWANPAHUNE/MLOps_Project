@@ -31,3 +31,11 @@ stages:
     - src/MLOps_Project/pipeline/model_trainer.py
     outs:
     - artifacts/model_trainer
+  model_evaluation:
+    cmd: python -m src.MLOps_Project.pipeline.model_evaluation
+    deps:
+    - artifacts/data_transformation
+    - artifacts/model_trainer
+    - src/MLOps_Project/pipeline/model_evaluation.py
+    outs:
+    - artifacts/model_evaluation
